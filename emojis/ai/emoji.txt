@@ -1,0 +1,9 @@
+:ai-a01::ai-a02::ai-a03::ai-a04::ai-a05::ai-a06::ai-a07::ai-a08::ai-a09::ai-a10::ai-a11::ai-a12::ai-a13::ai-a14::ai-a15::ai-a16:
+:ai-b01::ai-b02::ai-b03::ai-b04::ai-b05::ai-b06::ai-b07::ai-b08::ai-b09::ai-b10::ai-b11::ai-b12::ai-b13::ai-b14::ai-b15::ai-b16:
+:ai-c01::ai-c02::ai-c03::ai-c04::ai-c05::ai-c06::ai-c07::ai-c08::ai-c09::ai-c10::ai-c11::ai-c12::ai-c13::ai-c14::ai-c15::ai-c16:
+:ai-d01::ai-d02::ai-d03::ai-d04::ai-d05::ai-d06::ai-d07::ai-d08::ai-d09::ai-d10::ai-d11::ai-d12::ai-d13::ai-d14::ai-d15::ai-d16:
+:ai-e01::ai-e02::ai-e03::ai-e04::ai-e05::ai-e06::ai-e07::ai-e08::ai-e09::ai-e10::ai-e11::ai-e12::ai-e13::ai-e14::ai-e15::ai-e16:
+:ai-f01::ai-f02::ai-f03::ai-f04::ai-f05::ai-f06::ai-f07::ai-f08::ai-f09::ai-f10::ai-f11::ai-f12::ai-f13::ai-f14::ai-f15::ai-f16:
+:ai-g01::ai-g02::ai-g03::ai-g04::ai-g05::ai-g06::ai-g07::ai-g08::ai-g09::ai-g10::ai-g11::ai-g12::ai-g13::ai-g14::ai-g15::ai-g16:
+:ai-h01::ai-h02::ai-h03::ai-h04::ai-h05::ai-h06::ai-h07::ai-h08::ai-h09::ai-h10::ai-h11::ai-h12::ai-h13::ai-h14::ai-h15::ai-h16:
+:ai-i01::ai-i02::ai-i03::ai-i04::ai-i05::ai-i06::ai-i07::ai-i08::ai-i09::ai-i10::ai-i11::ai-i12::ai-i13::ai-i14::ai-i15::ai-i16:

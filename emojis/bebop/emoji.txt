@@ -1,0 +1,10 @@
+:beebop-a01::beebop-a02::beebop-a03::beebop-a04::beebop-a05::beebop-a06::beebop-a07::beebop-a08::beebop-a09::beebop-a10::beebop-a11::beebop-a12::beebop-a13::beebop-a14::beebop-a15::beebop-a16:
+:beebop-b01::beebop-b02::beebop-b03::beebop-b04::beebop-b05::beebop-b06::beebop-b07::beebop-b08::beebop-b09::beebop-b10::beebop-b11::beebop-b12::beebop-b13::beebop-b14::beebop-b15::beebop-b16:
+:beebop-c01::beebop-c02::beebop-c03::beebop-c04::beebop-c05::beebop-c06::beebop-c07::beebop-c08::beebop-c09::beebop-c10::beebop-c11::beebop-c12::beebop-c13::beebop-c14::beebop-c15::beebop-c16:
+:beebop-d01::beebop-d02::beebop-d03::beebop-d04::beebop-d05::beebop-d06::beebop-d07::beebop-d08::beebop-d09::beebop-d10::beebop-d11::beebop-d12::beebop-d13::beebop-d14::beebop-d15::beebop-d16:
+:beebop-e01::beebop-e02::beebop-e03::beebop-e04::beebop-e05::beebop-e06::beebop-e07::beebop-e08::beebop-e09::beebop-e10::beebop-e11::beebop-e12::beebop-e13::beebop-e14::beebop-e15::beebop-e16:
+:beebop-f01::beebop-f02::beebop-f03::beebop-f04::beebop-f05::beebop-f06::beebop-f07::beebop-f08::beebop-f09::beebop-f10::beebop-f11::beebop-f12::beebop-f13::beebop-f14::beebop-f15::beebop-f16:
+:beebop-g01::beebop-g02::beebop-g03::beebop-g04::beebop-g05::beebop-g06::beebop-g07::beebop-g08::beebop-g09::beebop-g10::beebop-g11::beebop-g12::beebop-g13::beebop-g14::beebop-g15::beebop-g16:
+:beebop-h01::beebop-h02::beebop-h03::beebop-h04::beebop-h05::beebop-h06::beebop-h07::beebop-h08::beebop-h09::beebop-h10::beebop-h11::beebop-h12::beebop-h13::beebop-h14::beebop-h15::beebop-h16:
+:beebop-i01::beebop-i02::beebop-i03::beebop-i04::beebop-i05::beebop-i06::beebop-i07::beebop-i08::beebop-i09::beebop-i10::beebop-i11::beebop-i12::beebop-i13::beebop-i14::beebop-i15::beebop-i16:
+:beebop-j01::beebop-j02::beebop-j03::beebop-j04::beebop-j05::beebop-j06::beebop-j07::beebop-j08::beebop-j09::beebop-j10::beebop-j11::beebop-j12::beebop-j13::beebop-j14::beebop-j15::beebop-j16:
