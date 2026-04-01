@@ -1,2 +1,0 @@
-:final-test-a1::final-test-a2:
-:final-test-b1::final-test-b2:

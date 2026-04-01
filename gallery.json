@@ -1,17 +1,5 @@
 [
   {
-    "name": "final-test",
-    "cols": 2,
-    "rows": 2,
-    "tile_size": 128,
-    "frame_step": 1,
-    "tile_count": 4,
-    "author": "tester",
-    "shared_at": "2026-04-01T17:27:41.685528+00:00",
-    "original_gif": "emojis/final-test/original.gif",
-    "emoji_txt": "emojis/final-test/emoji.txt"
-  },
-  {
     "name": "ai",
     "cols": 16,
     "rows": 9,
@@ -19,7 +7,7 @@
     "frame_step": 3,
     "tile_count": 144,
     "author": "SPAN",
-    "shared_at": "2026-04-02T00:00:00Z",
+    "shared_at": "2026-04-01T23:00:00Z",
     "original_gif": "emojis/ai/original.gif",
     "emoji_txt": "emojis/ai/emoji.txt"
   },
@@ -31,7 +19,7 @@
     "frame_step": 1,
     "tile_count": 112,
     "author": "SPAN",
-    "shared_at": "2026-04-02T00:00:00Z",
+    "shared_at": "2026-04-01T22:00:00Z",
     "original_gif": "emojis/kaguya-hime/original.gif",
     "emoji_txt": "emojis/kaguya-hime/emoji.txt"
   },
@@ -43,7 +31,7 @@
     "frame_step": 1,
     "tile_count": 160,
     "author": "SPAN",
-    "shared_at": "2026-04-02T00:00:00Z",
+    "shared_at": "2026-04-01T21:00:00Z",
     "original_gif": "emojis/bebop/original.gif",
     "emoji_txt": "emojis/bebop/emoji.txt"
   },
@@ -55,7 +43,7 @@
     "frame_step": 1,
     "tile_count": 108,
     "author": "SPAN",
-    "shared_at": "2026-04-02T00:00:00Z",
+    "shared_at": "2026-04-01T20:00:00Z",
     "original_gif": "emojis/dynamic-miku/original.gif",
     "emoji_txt": "emojis/dynamic-miku/emoji.txt"
   }
