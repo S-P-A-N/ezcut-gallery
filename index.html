@@ -1,393 +1,844 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ezcut Gallery</title>
-  <style>
-    :root {
-      --accent: #00bcd4;
-      --bg: #1a1a2e;
-      --card-bg: #16213e;
-      --text: #e0e0e0;
-      --text-dim: #8a8a9a;
-      --success: #4caf50;
-      --border: #2a2a4a;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ezcut Gallery</title>
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Noto+Serif+KR:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..900;1,8..60,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-    }
+    <style>
+      /* ── MINIMALIST MONOCHROME DESIGN SYSTEM ── */
+      :root {
+        --bg: #ffffff;
+        --fg: #000000;
+        --muted: #f5f5f5;
+        --muted-fg: #525252;
+        --border: #000000;
+        --border-light: #e5e5e5;
 
-    header {
-      text-align: center;
-      padding: 2.5rem 1rem 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header h1 {
-      color: var(--accent);
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-
-    header p {
-      color: var(--text-dim);
-      margin-top: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    .toolbar {
-      max-width: 1200px;
-      margin: 1.5rem auto 0;
-      padding: 0 1rem;
-      display: flex;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .search-box {
-      flex: 1;
-      padding: 0.6rem 1rem;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: var(--card-bg);
-      color: var(--text);
-      font-size: 0.95rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .search-box:focus { border-color: var(--accent); }
-    .search-box::placeholder { color: var(--text-dim); }
-
-    .count {
-      color: var(--text-dim);
-      font-size: 0.85rem;
-      white-space: nowrap;
-    }
-
-    .grid {
-      max-width: 1200px;
-      margin: 1.5rem auto;
-      padding: 0 1rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 1.2rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: border-color 0.2s, transform 0.15s;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      border-color: var(--accent);
-      transform: translateY(-2px);
-    }
-
-    .card-img {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: contain;
-      background: #0f0f23;
-      display: block;
-    }
-
-    .card-body { padding: 0.8rem 1rem; }
-
-    .card-name {
-      font-weight: 600;
-      color: var(--accent);
-      font-size: 1rem;
-    }
-
-    .card-meta {
-      color: var(--text-dim);
-      font-size: 0.8rem;
-      margin-top: 0.3rem;
-    }
-
-    .empty {
-      text-align: center;
-      color: var(--text-dim);
-      padding: 4rem 1rem;
-      font-size: 1.1rem;
-    }
-
-    /* Modal */
-    .overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 100;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .overlay.active { display: flex; }
-
-    .modal {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      max-width: 600px;
-      width: 90%;
-      max-height: 85vh;
-      overflow-y: auto;
-      padding: 1.5rem;
-    }
-
-    .modal h2 {
-      color: var(--accent);
-      font-size: 1.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .modal-img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: contain;
-      background: #0f0f23;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-
-    .modal-info {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 0.3rem 1rem;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-    }
-
-    .modal-info dt { color: var(--accent); font-weight: 600; }
-    .modal-info dd { color: var(--text); }
-
-    .emoji-txt-box {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 0.8rem;
-      font-family: monospace;
-      font-size: 0.85rem;
-      white-space: pre;
-      overflow-x: auto;
-      margin-bottom: 0.8rem;
-      color: var(--text);
-    }
-
-    .btn {
-      padding: 0.5rem 1rem;
-      border: 1px solid var(--accent);
-      border-radius: 6px;
-      background: transparent;
-      color: var(--accent);
-      font-size: 0.85rem;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .btn:hover { background: rgba(0, 188, 212, 0.15); }
-
-    .btn-row {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .btn.copied {
-      border-color: var(--success);
-      color: var(--success);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: var(--text-dim);
-      font-size: 0.8rem;
-      border-top: 1px solid var(--border);
-    }
-
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>ezcut Gallery</h1>
-    <p>Mattermost 대형 이모지 공유 갤러리</p>
-  </header>
-
-  <div class="toolbar">
-    <input class="search-box" type="text" id="search" placeholder="이모지 이름으로 검색...">
-    <span class="count" id="count"></span>
-  </div>
-
-  <div class="grid" id="gallery"></div>
-  <div class="empty" id="empty" style="display:none">
-    아직 공유된 이모지가 없습니다.
-  </div>
-
-  <div class="overlay" id="overlay">
-    <div class="modal" id="modal"></div>
-  </div>
-
-  <footer>
-    <a href="https://github.com/S-P-A-N/ezcut-gif">ezcut</a>로 만들어진 이모지 갤러리
-  </footer>
-
-  <script>
-    const REPO_RAW = "https://raw.githubusercontent.com/S-P-A-N/ezcut-gallery/main";
-    let galleryData = [];
-
-    async function init() {
-      try {
-        const resp = await fetch("gallery.json");
-        galleryData = await resp.json();
-      } catch {
-        galleryData = [];
-      }
-      render(galleryData);
-    }
-
-    function render(items) {
-      const grid = document.getElementById("gallery");
-      const empty = document.getElementById("empty");
-      const count = document.getElementById("count");
-
-      count.textContent = `${items.length}개`;
-
-      if (items.length === 0) {
-        grid.innerHTML = "";
-        empty.style.display = "block";
-        return;
+        --font-display: "Playfair Display", "Noto Serif KR", Georgia, serif;
+        --font-body: "Source Serif 4", "Noto Serif KR", Georgia, serif;
+        --font-mono: "JetBrains Mono", monospace;
       }
 
-      empty.style.display = "none";
-      grid.innerHTML = items.map((item, i) => `
-        <div class="card" data-index="${i}">
-          <img class="card-img"
-               src="${REPO_RAW}/${item.original_gif}"
-               alt="${item.name}"
-               loading="lazy">
-          <div class="card-body">
-            <div class="card-name">${esc(item.name)}</div>
-            <div class="card-meta">
-              ${item.cols}x${item.rows} · ${item.tile_count}tiles · ${formatDate(item.shared_at)}
-            </div>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ::selection {
+        background: var(--fg);
+        color: var(--bg);
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: var(--bg);
+        color: var(--fg);
+        min-height: 100vh;
+        overflow-x: hidden;
+        line-height: 1.625;
+        position: relative;
+        /* Noise Texture */
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      }
+
+      /* Ambient texture overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: -1;
+        opacity: 0.015;
+        background-image: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 1px,
+          #000 1px,
+          #000 2px
+        );
+        background-size: 100% 4px;
+      }
+
+      .container {
+        max-width: 1152px; /* max-w-6xl */
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .container {
+          padding: 0 2rem;
+        }
+      }
+      @media (min-width: 1024px) {
+        .container {
+          padding: 0 3rem;
+        }
+      }
+
+      /* ── Typography Scale ── */
+      .text-xs {
+        font-size: 0.75rem;
+      }
+      .text-sm {
+        font-size: 0.875rem;
+      }
+      .text-base {
+        font-size: 1rem;
+      }
+      .text-lg {
+        font-size: 1.125rem;
+      }
+      .text-xl {
+        font-size: 1.25rem;
+      }
+      .text-2xl {
+        font-size: 1.5rem;
+      }
+      .text-3xl {
+        font-size: 2rem;
+      }
+      .text-4xl {
+        font-size: 2.5rem;
+      }
+      .text-5xl {
+        font-size: 3.5rem;
+      }
+      .text-7xl {
+        font-size: 6rem;
+        line-height: 1;
+      }
+      .text-8xl {
+        font-size: 8rem;
+        line-height: 1;
+      }
+
+      .font-display {
+        font-family: var(--font-display);
+        letter-spacing: -0.025em;
+      }
+      .font-mono {
+        font-family: var(--font-mono);
+      }
+      .tracking-tight {
+        letter-spacing: -0.025em;
+      }
+      .tracking-tighter {
+        letter-spacing: -0.05em;
+      }
+      .tracking-widest {
+        letter-spacing: 0.1em;
+      }
+
+      .uppercase {
+        text-transform: uppercase;
+      }
+
+      /* ── Layout ── */
+      .header {
+        padding: 4rem 0 2rem;
+        border-bottom: 4px solid var(--border); /* Thick horizontal rule */
+        margin-bottom: 3rem;
+      }
+      .desc-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-width: 450px;
+      }
+      .desc-eyebrow {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -0.025em;
+        color: var(--fg);
+        margin-bottom: 0.25rem;
+        text-align: right;
+      }
+
+      .header-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .header-content {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-end;
+          gap: 2rem;
+        }
+      }
+      .page-title {
+        font-family: var(--font-display);
+        font-weight: 400;
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+        font-size: clamp(4rem, 10vw, 7rem);
+        margin-left: -0.05em; /* Optical alignment */
+      }
+      .title-row {
+        display: block;
+      }
+      .page-desc {
+        font-family: var(--font-body);
+        font-style: italic;
+        color: var(--fg);
+        font-size: 1.25rem;
+        text-align: right;
+        margin-bottom: -0.2rem; /* Optically drop inline with flush title text */
+      }
+
+      /* ── Toolbar ── */
+      .toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4rem;
+        gap: 2rem;
+      }
+      .search-wrap {
+        flex: 1;
+        max-width: 500px;
+        position: relative;
+      }
+      .search-input {
+        width: 100%;
+        background: transparent;
+        border: 2px solid var(--border);
+        border-radius: 0;
+        padding: 1rem 1.25rem;
+        font-family: var(--font-mono);
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--fg);
+        transition: all 100ms; /* Instant/snappy transition */
+        outline: none;
+      }
+      .search-input::placeholder {
+        color: var(--muted-fg);
+        font-style: normal;
+        font-family: var(--font-mono);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+      .search-input:focus,
+      .search-input:focus-visible {
+        border: 4px solid var(--border);
+        padding: calc(1rem - 2px) calc(1.25rem - 2px);
+      }
+      .count-badge {
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--border);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      /* ── Grid System ── */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 3rem;
+        margin-bottom: 6rem;
+      }
+
+      /* ── Card Component ── */
+      .card {
+        background: var(--bg);
+        color: var(--fg);
+        border: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition:
+          background 100ms,
+          color 100ms;
+        will-change: transform;
+      }
+
+      /* Hover Inversion Effect */
+      .card:hover {
+        background: var(--fg);
+        color: var(--bg);
+      }
+      .card:hover .card-img-wrap {
+        border-color: var(--bg);
+        border-width: 4px;
+      }
+      .card:hover .card-border-el {
+        border-color: var(--bg);
+      }
+      .card:hover .tag {
+        color: var(--bg);
+      }
+      .card:hover .muted-text {
+        color: var(--border-light);
+      }
+      .card:hover .btn-primary {
+        background: var(--bg);
+        color: var(--fg);
+      }
+      .card:hover .btn-primary:focus-visible {
+        outline-color: var(--bg);
+      }
+
+      .card-header {
+        padding: 1.5rem 1.5rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 1px solid var(--border);
+        transition: border-color 100ms;
+      }
+      .card-title {
+        font-family: var(--font-display);
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: -0.025em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .card-date {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        transition: color 100ms;
+      }
+      .muted-text {
+        color: var(--muted-fg);
+      }
+
+      .card-body {
+        padding: 1.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-img-wrap {
+        aspect-ratio: 16 / 10;
+        border: 1px solid var(--border);
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        background: #fdfdfd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+          border-color 100ms,
+          border-width 100ms;
+      }
+      .card-img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: grayscale(100%);
+        transform: scale(1);
+        transition:
+          filter 300ms,
+          transform 300ms;
+      }
+      .card:hover .card-img {
+        filter: grayscale(0%);
+        transform: scale(1.05);
+      }
+
+      .card-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+        border: 1px solid var(--border);
+        letter-spacing: 0.05em;
+        transition:
+          border-color 100ms,
+          color 100ms;
+      }
+
+      .card-author {
+        font-size: 0.875rem;
+        font-style: italic;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .card-author::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      /* Expandable emoji.txt area */
+      .card-expand {
+        overflow: hidden;
+        max-height: 0;
+        transition:
+          max-height 300ms cubic-bezier(0.16, 1, 0.3, 1),
+          padding 300ms;
+        margin: 0 1.5rem;
+        border-top: 0px solid var(--border);
+      }
+      .card-expand.open {
+        max-height: 250px; /* Arbitrary high enough value */
+        padding: 1rem 0 1.5rem;
+        border-top-width: 1px;
+      }
+      .emoji-txt-pre {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        line-height: 1.5;
+        white-space: pre-wrap;
+        word-break: break-all;
+        color: inherit;
+        max-height: 200px;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: currentColor transparent;
+      }
+
+      .card-actions {
+        margin-top: auto;
+        display: flex;
+        gap: 1rem;
+      }
+
+      /* ── Buttons ── */
+      .btn {
+        cursor: pointer;
+        font-family: var(--font-mono);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 0.875rem;
+        font-weight: 500;
+        border-radius: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: all 100ms;
+        text-decoration: none;
+      }
+
+      .focus-ring:focus-visible {
+        outline: 3px solid var(--fg);
+        outline-offset: 3px;
+      }
+
+      .btn-primary {
+        background: var(--fg);
+        color: var(--bg);
+        border: none;
+        padding: 1rem 2rem;
+        flex: 1;
+      }
+      /* Default hover (outside card inversion) */
+      .btn-primary:not(.in-card):hover {
+        background: var(--bg);
+        color: var(--fg);
+        border: 1px solid var(--fg);
+        padding: calc(1rem - 1px) calc(2rem - 1px); /* Prevent layout shift */
+      }
+      .btn-primary.btn-copied,
+      .card:hover .btn-primary.btn-copied {
+        background: transparent;
+        color: currentColor;
+        border: 2px solid currentColor;
+        padding: calc(1rem - 2px) calc(2rem - 2px);
+      }
+
+      /* ── Empty State ── */
+      .empty {
+        text-align: center;
+        padding: 8rem 0;
+        border-top: 1px solid var(--border-light);
+        border-bottom: 1px solid var(--border-light);
+      }
+      .empty-title {
+        font-family: var(--font-display);
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+      .empty-sub {
+        font-size: 1.125rem;
+        color: var(--muted-fg);
+        font-style: italic;
+      }
+      .empty-code {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--border);
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        background: var(--muted);
+        color: var(--fg);
+      }
+
+      /* ── Footer ── */
+      .footer {
+        padding: 4rem 0;
+        border-top: 4px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: var(--font-mono);
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .footer a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 2px;
+        transition: border-width 100ms;
+      }
+      .footer a:hover {
+        border-bottom-width: 3px;
+      }
+
+      /* ── Utilities ── */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
+
+      @media (max-width: 768px) {
+        .header {
+          padding: 4rem 0 2rem;
+        }
+        .text-7xl {
+          font-size: 4rem;
+        }
+        .text-8xl {
+          font-size: 5rem;
+        }
+        .hidden-mobile {
+          display: none;
+        }
+        .page-desc {
+          text-align: left;
+          margin-left: 0;
+        }
+        .toolbar {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .search-wrap {
+          max-width: 100%;
+        }
+        .count-badge {
+          align-self: flex-start;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .footer {
+          flex-direction: column;
+          gap: 2rem;
+          text-align: center;
+        }
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+        border-left: 1px solid var(--border-light);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--border);
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--muted-fg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Skip Link for A11y -->
+    <a
+      href="#main-content"
+      class="sr-only focus-visible:not-sr-only focus-visible:absolute focus-visible:z-50 focus-visible:bg-black focus-visible:text-white focus-visible:p-4 focus-visible:top-0 focus-visible:left-0 font-mono text-sm uppercase"
+      >Skip to content</a
+    >
+
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <div class="title-wrap">
+            <h1 class="page-title">
+              <span class="title-row">ezcut</span>
+              <span class="title-row">Gallery</span>
+            </h1>
+          </div>
+          
+          <div class="desc-wrap">
+            <div class="desc-eyebrow">SEAMLESS PERFECT ANIME NETWORK</div>
+            <p class="page-desc">
+              Delivering enterprise-grade, high-availability anime synchronization with zero visual downtime for mission-critical chat environments.
+            </p>
           </div>
         </div>
-      `).join("");
+      </header>
 
-      grid.querySelectorAll(".card").forEach(card => {
-        card.addEventListener("click", () => openModal(items[+card.dataset.index]));
-      });
-    }
-
-    function openModal(item) {
-      const modal = document.getElementById("modal");
-      const overlay = document.getElementById("overlay");
-
-      modal.innerHTML = `
-        <h2>${esc(item.name)}</h2>
-        <img class="modal-img"
-             src="${REPO_RAW}/${item.original_gif}"
-             alt="${item.name}">
-        <dl class="modal-info">
-          <dt>Grid</dt><dd>${item.cols} x ${item.rows}</dd>
-          <dt>Tiles</dt><dd>${item.tile_count}</dd>
-          <dt>Tile size</dt><dd>${item.tile_size}px</dd>
-          <dt>Frame step</dt><dd>${item.frame_step}</dd>
-          <dt>Shared</dt><dd>${formatDate(item.shared_at)}</dd>
-          ${item.author ? `<dt>Author</dt><dd>${esc(item.author)}</dd>` : ""}
-        </dl>
-        <div class="emoji-txt-box" id="emoji-txt-content">불러오는 중...</div>
-        <div class="btn-row">
-          <button class="btn" id="copy-btn" disabled>emoji.txt 복사</button>
-          <button class="btn" id="close-btn">닫기</button>
+      <main id="main-content">
+        <div class="toolbar">
+          <div class="search-wrap">
+            <label for="search" class="sr-only">Search Emojis</label>
+            <input
+              class="search-input"
+              type="text"
+              id="search"
+              placeholder="[ SEARCH EMOJIS... ]"
+              autocomplete="off"
+            />
+          </div>
+          <div class="count-badge" id="count">0 Entries</div>
         </div>
-      `;
 
-      overlay.classList.add("active");
+        <div class="grid" id="gallery"></div>
 
-      document.getElementById("close-btn").addEventListener("click", closeModal);
+        <div class="empty" id="empty" style="display: none">
+          <h2 class="empty-title">Nothing Found</h2>
+          <div class="empty-sub">
+            This archive is currently empty or your search yielded no results.
+          </div>
+          <div class="empty-code">ezcut share --last</div>
+        </div>
+      </main>
 
-      fetchEmojiTxt(item);
-    }
+      <footer class="footer">
+        <div>
+          &copy; <span id="year"></span>
+          <a
+            href="https://github.com/S-P-A-N"
+            class="focus-ring"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="border-bottom: none"
+            >SPAN</a
+          >
+        </div>
+        <div>
+          <a
+            href="https://github.com/S-P-A-N/ezcut-gif"
+            class="focus-ring"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ezcut-gif Source</a
+          >
+        </div>
+      </footer>
+    </div>
 
-    async function fetchEmojiTxt(item) {
-      const box = document.getElementById("emoji-txt-content");
-      const btn = document.getElementById("copy-btn");
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-      try {
-        const resp = await fetch(`${REPO_RAW}/${item.emoji_txt}`);
-        const text = await resp.text();
-        box.textContent = text;
-        btn.disabled = false;
+      // Use relative path for fetching JSON since this is deployed alongside
+      const JSON_URL = "gallery.json";
+      let galleryData = [];
+      const emojiTxtCache = new Map();
 
-        btn.addEventListener("click", async () => {
-          try {
-            await navigator.clipboard.writeText(text);
-            btn.textContent = "복사됨!";
-            btn.classList.add("copied");
-            setTimeout(() => {
-              btn.textContent = "emoji.txt 복사";
-              btn.classList.remove("copied");
-            }, 2000);
-          } catch {
-            box.focus();
-            document.execCommand("selectAll");
-          }
-        });
-      } catch {
-        box.textContent = "emoji.txt를 불러올 수 없습니다.";
-      }
-    }
-
-    function closeModal() {
-      document.getElementById("overlay").classList.remove("active");
-    }
-
-    document.getElementById("overlay").addEventListener("click", (e) => {
-      if (e.target === e.currentTarget) closeModal();
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeModal();
-    });
-
-    document.getElementById("search").addEventListener("input", (e) => {
-      const query = e.target.value.toLowerCase().trim();
-      if (!query) {
+      async function init() {
+        try {
+          const resp = await fetch(JSON_URL);
+          if (!resp.ok) throw new Error("Network response was not ok");
+          galleryData = await resp.json();
+          // Sort by dates descending
+          galleryData.sort((a, b) =>
+            (b.shared_at || "").localeCompare(a.shared_at || ""),
+          );
+        } catch (e) {
+          console.error("Failed to load gallery.json:", e);
+          galleryData = [];
+        }
         render(galleryData);
-        return;
       }
-      render(galleryData.filter(item => item.name.toLowerCase().includes(query)));
-    });
 
-    function esc(str) {
-      const el = document.createElement("span");
-      el.textContent = str;
-      return el.innerHTML;
-    }
+      function render(items) {
+        const grid = document.getElementById("gallery");
+        const empty = document.getElementById("empty");
+        const count = document.getElementById("count");
 
-    function formatDate(iso) {
-      if (!iso) return "";
-      return iso.slice(0, 10);
-    }
+        count.textContent = `${items.length} ${items.length === 1 ? "Entry" : "Entries"}`;
 
-    init();
-  </script>
-</body>
+        if (items.length === 0) {
+          grid.innerHTML = "";
+          empty.style.display = "block";
+          return;
+        }
+
+        empty.style.display = "none";
+        grid.innerHTML = items
+          .map(
+            (item, i) => `
+        <article class="card">
+          <div class="card-header card-border-el">
+            <h2 class="card-title" title="${esc(item.name)}">${esc(item.name)}</h2>
+            <div class="card-date muted-text">${formatDate(item.shared_at)}</div>
+          </div>
+          
+          <div class="card-body">
+            <div class="card-img-wrap card-border-el">
+              <!-- Using relative path because images are stored in "emojis/" in the same repo root -->
+              <img class="card-img"
+                   src="${esc(item.original_gif)}"
+                   alt="Original animated GIF for ${esc(item.name)}"
+                   loading="lazy">
+            </div>
+            
+            <div class="card-tags">
+              <span class="tag card-border-el" title="Columns x Rows">${item.cols} &times; ${item.rows}</span>
+              <span class="tag card-border-el" title="Total Tiles">${item.tile_count} TILES</span>
+              <span class="tag card-border-el" title="Tile Size">${item.tile_size}PX / TILE</span>
+            </div>
+            
+            ${item.author ? `<div class="card-author card-border-el">By ${esc(item.author)}</div>` : ""}
+
+            <div class="card-actions">
+              <button class="btn btn-primary in-card focus-ring" data-action="copy" data-index="${i}">
+                [ COPY EMOJI.TXT ]
+              </button>
+            </div>
+          </div>
+
+        </article>
+      `,
+          )
+          .join("");
+
+        grid.querySelectorAll('[data-action="copy"]').forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            handleCopy(btn, items[+btn.dataset.index], +btn.dataset.index);
+          });
+        });
+      }
+
+      async function handleCopy(btn, item, index) {
+        let text = emojiTxtCache.get(item.name);
+
+        if (!text) {
+          btn.textContent = "[ LOADING... ]";
+          try {
+            // Relative fetching
+            const resp = await fetch(item.emoji_txt);
+            if (!resp.ok) throw new Error("Failed fetching");
+            text = await resp.text();
+            emojiTxtCache.set(item.name, text);
+          } catch {
+            btn.textContent = "[ FAILED ]";
+            setTimeout(() => {
+              btn.textContent = "[ COPY EMOJI.TXT ]";
+            }, 2000);
+            return;
+          }
+        }
+
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const textarea = document.createElement("textarea");
+            textarea.value = text;
+            textarea.style.position = "fixed";
+            textarea.style.opacity = "0";
+            document.body.appendChild(textarea);
+            textarea.select();
+            const success = document.execCommand("copy");
+            document.body.removeChild(textarea);
+            if (!success) throw new Error("Fallback copy failed");
+          }
+          showSuccess(btn);
+        } catch (err) {
+          console.error("Copy failed:", err);
+          btn.textContent = "[ FAILED ]";
+          setTimeout(() => {
+            btn.textContent = "[ COPY EMOJI.TXT ]";
+          }, 2000);
+        }
+      }
+
+      function showSuccess(btn) {
+        btn.textContent = "[ COPIED ]";
+        btn.classList.add("btn-copied");
+        setTimeout(() => {
+          btn.textContent = "[ COPY EMOJI.TXT ]";
+          btn.classList.remove("btn-copied");
+        }, 2000);
+      }
+
+      document.getElementById("search").addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        if (!query) {
+          render(galleryData);
+          return;
+        }
+        render(
+          galleryData.filter(
+            (item) =>
+              item.name.toLowerCase().includes(query) ||
+              (item.author && item.author.toLowerCase().includes(query)),
+          ),
+        );
+      });
+
+      function esc(str) {
+        if (!str) return "";
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function formatDate(iso) {
+        if (!iso) return "N/A";
+        try {
+          const d = new Date(iso);
+          if (isNaN(d.getTime())) return iso;
+          const opts = { year: "numeric", month: "short", day: "2-digit" };
+          return d.toLocaleDateString("en-US", opts).toUpperCase();
+        } catch {
+          return iso;
+        }
+      }
+
+      init();
+    </script>
+  </body>
 </html>

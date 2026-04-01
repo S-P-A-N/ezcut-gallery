@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "name": "ai",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 3,
+    "tile_count": 144,
+    "author": "SPAN",
+    "shared_at": "2026-04-02T00:00:00Z",
+    "original_gif": "emojis/ai/original.gif",
+    "emoji_txt": "emojis/ai/emoji.txt"
+  },
+  {
+    "name": "kaguya-hime",
+    "cols": 16,
+    "rows": 7,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 112,
+    "author": "SPAN",
+    "shared_at": "2026-04-02T00:00:00Z",
+    "original_gif": "emojis/kaguya-hime/original.gif",
+    "emoji_txt": "emojis/kaguya-hime/emoji.txt"
+  },
+  {
+    "name": "bebop",
+    "cols": 16,
+    "rows": 10,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 160,
+    "author": "SPAN",
+    "shared_at": "2026-04-02T00:00:00Z",
+    "original_gif": "emojis/bebop/original.gif",
+    "emoji_txt": "emojis/bebop/emoji.txt"
+  },
+  {
+    "name": "dynamic-miku",
+    "cols": 12,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 108,
+    "author": "SPAN",
+    "shared_at": "2026-04-02T00:00:00Z",
+    "original_gif": "emojis/dynamic-miku/original.gif",
+    "emoji_txt": "emojis/dynamic-miku/emoji.txt"
+  }
+]
