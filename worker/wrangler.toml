@@ -1,0 +1,10 @@
+name = "ezcut-proxy"
+main = "src/index.js"
+compatibility_date = "2026-04-01"
+
+# 배포 명령어:
+# npx wrangler deploy
+
+# 배포 후 시크릿 주입 명령어:
+# npx wrangler secret put GITHUB_PAT
+# npx wrangler secret put UPLOAD_API_KEY

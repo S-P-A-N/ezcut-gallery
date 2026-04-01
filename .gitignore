@@ -12,3 +12,4 @@ Thumbs.db
 *.swo
 
 __pycache__/
+worker/.wrangler
