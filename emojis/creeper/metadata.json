@@ -1,0 +1,12 @@
+{
+  "name": "creeper",
+  "cols": 14,
+  "rows": 10,
+  "tile_size": 128,
+  "frame_step": 1,
+  "tile_count": 140,
+  "author": "",
+  "shared_at": "2026-04-01T23:13:16.430000+00:00",
+  "original_gif": "emojis/creeper/original.gif",
+  "emoji_txt": "emojis/creeper/emoji.txt"
+}
