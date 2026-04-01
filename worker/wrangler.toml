@@ -2,6 +2,11 @@ name = "ezcut-proxy"
 main = "src/index.js"
 compatibility_date = "2026-04-01"
 
+[observability]
+[observability.logs]
+enabled = true
+invocation_logs = true
+
 # 배포 명령어:
 # npx wrangler deploy
 
