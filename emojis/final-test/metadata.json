@@ -1,0 +1,12 @@
+{
+  "name": "final-test",
+  "cols": 2,
+  "rows": 2,
+  "tile_size": 128,
+  "frame_step": 1,
+  "tile_count": 4,
+  "author": "tester",
+  "shared_at": "2026-04-01T17:27:41.685528+00:00",
+  "original_gif": "emojis/final-test/original.gif",
+  "emoji_txt": "emojis/final-test/emoji.txt"
+}
