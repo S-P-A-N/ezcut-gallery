@@ -1,5 +1,17 @@
 [
   {
+    "name": "jellyfish",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 3,
+    "tile_count": 144,
+    "author": "truffleplanet",
+    "shared_at": "2026-04-02T08:55:42.672260+00:00",
+    "original_gif": "emojis/jellyfish/original.gif",
+    "emoji_txt": "emojis/jellyfish/emoji.txt"
+  },
+  {
     "name": "trickal_Kommy_sad",
     "cols": 3,
     "rows": 3,
