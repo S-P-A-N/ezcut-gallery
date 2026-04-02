@@ -1,5 +1,17 @@
 [
   {
+    "name": "waguri2",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 144,
+    "author": "CYH",
+    "shared_at": "2026-04-02T01:25:59.520747+00:00",
+    "original_gif": "emojis/waguri2/original.gif",
+    "emoji_txt": "emojis/waguri2/emoji.txt"
+  },
+  {
     "name": "ai",
     "cols": 16,
     "rows": 9,
