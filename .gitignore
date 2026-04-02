@@ -13,3 +13,4 @@ Thumbs.db
 
 __pycache__/
 worker/.wrangler
+.playwright-mcp
