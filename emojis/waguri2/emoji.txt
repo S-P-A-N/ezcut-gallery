@@ -1,0 +1,9 @@
+:waguri2-a01::waguri2-a02::waguri2-a03::waguri2-a04::waguri2-a05::waguri2-a06::waguri2-a07::waguri2-a08::waguri2-a09::waguri2-a10::waguri2-a11::waguri2-a12::waguri2-a13::waguri2-a14::waguri2-a15::waguri2-a16:
+:waguri2-b01::waguri2-b02::waguri2-b03::waguri2-b04::waguri2-b05::waguri2-b06::waguri2-b07::waguri2-b08::waguri2-b09::waguri2-b10::waguri2-b11::waguri2-b12::waguri2-b13::waguri2-b14::waguri2-b15::waguri2-b16:
+:waguri2-c01::waguri2-c02::waguri2-c03::waguri2-c04::waguri2-c05::waguri2-c06::waguri2-c07::waguri2-c08::waguri2-c09::waguri2-c10::waguri2-c11::waguri2-c12::waguri2-c13::waguri2-c14::waguri2-c15::waguri2-c16:
+:waguri2-d01::waguri2-d02::waguri2-d03::waguri2-d04::waguri2-d05::waguri2-d06::waguri2-d07::waguri2-d08::waguri2-d09::waguri2-d10::waguri2-d11::waguri2-d12::waguri2-d13::waguri2-d14::waguri2-d15::waguri2-d16:
+:waguri2-e01::waguri2-e02::waguri2-e03::waguri2-e04::waguri2-e05::waguri2-e06::waguri2-e07::waguri2-e08::waguri2-e09::waguri2-e10::waguri2-e11::waguri2-e12::waguri2-e13::waguri2-e14::waguri2-e15::waguri2-e16:
+:waguri2-f01::waguri2-f02::waguri2-f03::waguri2-f04::waguri2-f05::waguri2-f06::waguri2-f07::waguri2-f08::waguri2-f09::waguri2-f10::waguri2-f11::waguri2-f12::waguri2-f13::waguri2-f14::waguri2-f15::waguri2-f16:
+:waguri2-g01::waguri2-g02::waguri2-g03::waguri2-g04::waguri2-g05::waguri2-g06::waguri2-g07::waguri2-g08::waguri2-g09::waguri2-g10::waguri2-g11::waguri2-g12::waguri2-g13::waguri2-g14::waguri2-g15::waguri2-g16:
+:waguri2-h01::waguri2-h02::waguri2-h03::waguri2-h04::waguri2-h05::waguri2-h06::waguri2-h07::waguri2-h08::waguri2-h09::waguri2-h10::waguri2-h11::waguri2-h12::waguri2-h13::waguri2-h14::waguri2-h15::waguri2-h16:
+:waguri2-i01::waguri2-i02::waguri2-i03::waguri2-i04::waguri2-i05::waguri2-i06::waguri2-i07::waguri2-i08::waguri2-i09::waguri2-i10::waguri2-i11::waguri2-i12::waguri2-i13::waguri2-i14::waguri2-i15::waguri2-i16:
