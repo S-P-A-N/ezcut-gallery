@@ -1,0 +1,8 @@
+:mmga-a01::mmga-a02::mmga-a03::mmga-a04::mmga-a05::mmga-a06::mmga-a07::mmga-a08::mmga-a09::mmga-a10::mmga-a11::mmga-a12:
+:mmga-b01::mmga-b02::mmga-b03::mmga-b04::mmga-b05::mmga-b06::mmga-b07::mmga-b08::mmga-b09::mmga-b10::mmga-b11::mmga-b12:
+:mmga-c01::mmga-c02::mmga-c03::mmga-c04::mmga-c05::mmga-c06::mmga-c07::mmga-c08::mmga-c09::mmga-c10::mmga-c11::mmga-c12:
+:mmga-d01::mmga-d02::mmga-d03::mmga-d04::mmga-d05::mmga-d06::mmga-d07::mmga-d08::mmga-d09::mmga-d10::mmga-d11::mmga-d12:
+:mmga-e01::mmga-e02::mmga-e03::mmga-e04::mmga-e05::mmga-e06::mmga-e07::mmga-e08::mmga-e09::mmga-e10::mmga-e11::mmga-e12:
+:mmga-f01::mmga-f02::mmga-f03::mmga-f04::mmga-f05::mmga-f06::mmga-f07::mmga-f08::mmga-f09::mmga-f10::mmga-f11::mmga-f12:
+:mmga-g01::mmga-g02::mmga-g03::mmga-g04::mmga-g05::mmga-g06::mmga-g07::mmga-g08::mmga-g09::mmga-g10::mmga-g11::mmga-g12:
+:mmga-h01::mmga-h02::mmga-h03::mmga-h04::mmga-h05::mmga-h06::mmga-h07::mmga-h08::mmga-h09::mmga-h10::mmga-h11::mmga-h12:
