@@ -265,8 +265,6 @@
           background 100ms,
           color 100ms;
         will-change: transform;
-        content-visibility: auto;
-        contain-intrinsic-size: auto 500px;
       }
 
       /* Hover Inversion Effect */
@@ -606,11 +604,13 @@
               <span class="title-row">Gallery</span>
             </h1>
           </div>
-          
+
           <div class="desc-wrap">
             <div class="desc-eyebrow">SEAMLESS PERFECT ANIME NETWORK</div>
             <p class="page-desc">
-              Delivering enterprise-grade, high-availability anime synchronization with zero visual downtime for mission-critical chat environments.
+              Delivering enterprise-grade, high-availability anime
+              synchronization with zero visual downtime for mission-critical
+              chat environments.
             </p>
           </div>
         </div>
@@ -632,8 +632,13 @@
         </div>
 
         <div class="grid" id="gallery"></div>
-        <div id="load-more-wrap" style="display: none; text-align: center; margin-bottom: 4rem;">
-          <button id="load-more" class="btn btn-primary focus-ring">[ LOAD MORE ]</button>
+        <div
+          id="load-more-wrap"
+          style="display: none; text-align: center; margin-bottom: 4rem"
+        >
+          <button id="load-more" class="btn btn-primary focus-ring">
+            [ LOAD MORE ]
+          </button>
         </div>
 
         <div class="empty" id="empty" style="display: none">
@@ -678,6 +683,7 @@
       let galleryData = [];
       let currentItems = [];
       let renderedCount = 0;
+      let imgObserver = null;
       const emojiTxtCache = new Map();
 
       async function init() {
@@ -707,9 +713,8 @@
           <div class="card-body">
             <div class="card-img-wrap card-border-el">
               <img class="card-img"
-                   src="${esc(item.original_gif)}"
-                   alt="Original animated GIF for ${esc(item.name)}"
-                   loading="lazy">
+                   data-src="${esc(item.original_gif)}"
+                   alt="Original animated GIF for ${esc(item.name)}">
             </div>
 
             <div class="card-tags">
@@ -733,26 +738,38 @@
       function appendBatch() {
         const grid = document.getElementById("gallery");
         const loadMoreWrap = document.getElementById("load-more-wrap");
-        const batch = currentItems.slice(renderedCount, renderedCount + BATCH_SIZE);
+        const batch = currentItems.slice(
+          renderedCount,
+          renderedCount + BATCH_SIZE,
+        );
         if (batch.length === 0) return;
 
-        const html = batch.map((item, i) => cardHTML(item, renderedCount + i)).join("");
+        const html = batch
+          .map((item, i) => cardHTML(item, renderedCount + i))
+          .join("");
         grid.insertAdjacentHTML("beforeend", html);
 
-        // Bind copy buttons for newly added cards only
+        // Bind copy buttons + observe images for newly added cards
         const allBtns = grid.querySelectorAll('[data-action="copy"]');
+        const allImgs = grid.querySelectorAll(".card-img");
         for (let i = renderedCount; i < renderedCount + batch.length; i++) {
           const btn = allBtns[i];
           btn.addEventListener("click", (e) => {
             e.stopPropagation();
-            handleCopy(btn, currentItems[+btn.dataset.index], +btn.dataset.index);
+            handleCopy(
+              btn,
+              currentItems[+btn.dataset.index],
+              +btn.dataset.index,
+            );
           });
+          if (imgObserver) imgObserver.observe(allImgs[i]);
         }
 
         renderedCount += batch.length;
 
         // Hide button if all items rendered
-        loadMoreWrap.style.display = renderedCount >= currentItems.length ? "none" : "block";
+        loadMoreWrap.style.display =
+          renderedCount >= currentItems.length ? "none" : "block";
       }
 
       function render(items) {
@@ -762,6 +779,26 @@
         const loadMoreWrap = document.getElementById("load-more-wrap");
 
         count.textContent = `${items.length} ${items.length === 1 ? "Entry" : "Entries"}`;
+
+        // Teardown previous observer
+        if (imgObserver) imgObserver.disconnect();
+
+        // GIF recycling: load src when near viewport, clear when far away
+        imgObserver = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              const img = entry.target;
+              if (entry.isIntersecting) {
+                if (!img.hasAttribute("src")) img.src = img.dataset.src;
+              } else {
+                img.src =
+                  "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+                img.removeAttribute("src");
+              }
+            }
+          },
+          { rootMargin: "600px" },
+        );
 
         if (items.length === 0) {
           grid.innerHTML = "";
@@ -868,7 +905,9 @@
         }
       }
 
-      document.getElementById("load-more").addEventListener("click", appendBatch);
+      document
+        .getElementById("load-more")
+        .addEventListener("click", appendBatch);
 
       init();
     </script>
