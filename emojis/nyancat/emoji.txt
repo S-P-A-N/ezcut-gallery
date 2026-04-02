@@ -1,0 +1,3 @@
+:nyancat-a1::nyancat-a2::nyancat-a3::nyancat-a4::nyancat-a5:
+:nyancat-b1::nyancat-b2::nyancat-b3::nyancat-b4::nyancat-b5:
+:nyancat-c1::nyancat-c2::nyancat-c3::nyancat-c4::nyancat-c5:
