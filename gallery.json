@@ -1,5 +1,17 @@
 [
   {
+    "name": "trickal_Kommy_sad",
+    "cols": 3,
+    "rows": 3,
+    "tile_size": 128,
+    "frame_step": 2,
+    "tile_count": 9,
+    "author": "Anonymous",
+    "shared_at": "2026-04-02T08:43:15.637629+00:00",
+    "original_gif": "emojis/trickal_Kommy_sad/original.gif",
+    "emoji_txt": "emojis/trickal_Kommy_sad/emoji.txt"
+  },
+  {
     "name": "nyancat",
     "cols": 5,
     "rows": 3,
