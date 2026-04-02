@@ -1,5 +1,17 @@
 [
   {
+    "name": "oshinoko-cheer",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 144,
+    "author": "PandasYang",
+    "shared_at": "2026-04-02T10:56:02.222980+00:00",
+    "original_gif": "emojis/oshinoko-cheer/original.gif",
+    "emoji_txt": "emojis/oshinoko-cheer/emoji.txt"
+  },
+  {
     "name": "jellyfish",
     "cols": 16,
     "rows": 9,
