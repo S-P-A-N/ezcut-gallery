@@ -1,5 +1,17 @@
 [
   {
+    "name": "MMGA",
+    "cols": 12,
+    "rows": 8,
+    "tile_size": 128,
+    "frame_step": 2,
+    "tile_count": 96,
+    "author": "",
+    "shared_at": "2026-04-02T01:56:29.457520+00:00",
+    "original_gif": "emojis/MMGA/original.gif",
+    "emoji_txt": "emojis/MMGA/emoji.txt"
+  },
+  {
     "name": "waguri2",
     "cols": 16,
     "rows": 9,
