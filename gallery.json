@@ -1,5 +1,17 @@
 [
   {
+    "name": "nyancat",
+    "cols": 5,
+    "rows": 3,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 15,
+    "author": "CYH",
+    "shared_at": "2026-04-02T04:07:45.644783+00:00",
+    "original_gif": "emojis/nyancat/original.gif",
+    "emoji_txt": "emojis/nyancat/emoji.txt"
+  },
+  {
     "name": "MMGA",
     "cols": 12,
     "rows": 8,
