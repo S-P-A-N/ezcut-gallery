@@ -1,5 +1,17 @@
 [
   {
+    "name": "good_dumble",
+    "cols": 6,
+    "rows": 6,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 36,
+    "author": "Dumbledore",
+    "shared_at": "2026-04-03T02:13:19.903604+00:00",
+    "original_gif": "emojis/good_dumble/original.gif",
+    "emoji_txt": "emojis/good_dumble/emoji.txt"
+  },
+  {
     "name": "hohwagu",
     "cols": 10,
     "rows": 7,
