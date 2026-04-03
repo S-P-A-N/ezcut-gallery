@@ -1,0 +1,6 @@
+:good_dumble-a1::good_dumble-a2::good_dumble-a3::good_dumble-a4::good_dumble-a5::good_dumble-a6:
+:good_dumble-b1::good_dumble-b2::good_dumble-b3::good_dumble-b4::good_dumble-b5::good_dumble-b6:
+:good_dumble-c1::good_dumble-c2::good_dumble-c3::good_dumble-c4::good_dumble-c5::good_dumble-c6:
+:good_dumble-d1::good_dumble-d2::good_dumble-d3::good_dumble-d4::good_dumble-d5::good_dumble-d6:
+:good_dumble-e1::good_dumble-e2::good_dumble-e3::good_dumble-e4::good_dumble-e5::good_dumble-e6:
+:good_dumble-f1::good_dumble-f2::good_dumble-f3::good_dumble-f4::good_dumble-f5::good_dumble-f6:
