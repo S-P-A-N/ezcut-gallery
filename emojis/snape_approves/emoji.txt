@@ -1,0 +1,5 @@
+:snape_approves-a1::snape_approves-a2::snape_approves-a3::snape_approves-a4::snape_approves-a5::snape_approves-a6::snape_approves-a7::snape_approves-a8:
+:snape_approves-b1::snape_approves-b2::snape_approves-b3::snape_approves-b4::snape_approves-b5::snape_approves-b6::snape_approves-b7::snape_approves-b8:
+:snape_approves-c1::snape_approves-c2::snape_approves-c3::snape_approves-c4::snape_approves-c5::snape_approves-c6::snape_approves-c7::snape_approves-c8:
+:snape_approves-d1::snape_approves-d2::snape_approves-d3::snape_approves-d4::snape_approves-d5::snape_approves-d6::snape_approves-d7::snape_approves-d8:
+:snape_approves-e1::snape_approves-e2::snape_approves-e3::snape_approves-e4::snape_approves-e5::snape_approves-e6::snape_approves-e7::snape_approves-e8:
