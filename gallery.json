@@ -1,5 +1,17 @@
 [
   {
+    "name": "hohwagu",
+    "cols": 10,
+    "rows": 7,
+    "tile_size": 128,
+    "frame_step": 5,
+    "tile_count": 70,
+    "author": "CYH",
+    "shared_at": "2026-04-03T01:58:13.162760+00:00",
+    "original_gif": "emojis/hohwagu/original.gif",
+    "emoji_txt": "emojis/hohwagu/emoji.txt"
+  },
+  {
     "name": "takemymoney",
     "cols": 8,
     "rows": 6,
