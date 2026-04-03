@@ -1,5 +1,17 @@
 [
   {
+    "name": "higuruma",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 2,
+    "tile_count": 144,
+    "author": "CYH",
+    "shared_at": "2026-04-03T00:51:50.091072+00:00",
+    "original_gif": "emojis/higuruma/original.gif",
+    "emoji_txt": "emojis/higuruma/emoji.txt"
+  },
+  {
     "name": "calcifer_numnum",
     "cols": 14,
     "rows": 7,
