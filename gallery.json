@@ -1,5 +1,17 @@
 [
   {
+    "name": "thankyou_penguin",
+    "cols": 1,
+    "rows": 1,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 1,
+    "author": "TakemyEmoji",
+    "shared_at": "2026-04-03T06:15:35.227671+00:00",
+    "original_gif": "emojis/thankyou_penguin/original.gif",
+    "emoji_txt": "emojis/thankyou_penguin/emoji.txt"
+  },
+  {
     "name": "vladilena",
     "cols": 10,
     "rows": 6,
