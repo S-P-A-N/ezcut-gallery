@@ -1,5 +1,17 @@
 [
   {
+    "name": "snape_approves",
+    "cols": 8,
+    "rows": 5,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 40,
+    "author": "snape",
+    "shared_at": "2026-04-03T03:46:20.072255+00:00",
+    "original_gif": "emojis/snape_approves/original.gif",
+    "emoji_txt": "emojis/snape_approves/emoji.txt"
+  },
+  {
     "name": "good_dumble",
     "cols": 6,
     "rows": 6,
