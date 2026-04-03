@@ -1,0 +1,7 @@
+:hohwagu-a01::hohwagu-a02::hohwagu-a03::hohwagu-a04::hohwagu-a05::hohwagu-a06::hohwagu-a07::hohwagu-a08::hohwagu-a09::hohwagu-a10:
+:hohwagu-b01::hohwagu-b02::hohwagu-b03::hohwagu-b04::hohwagu-b05::hohwagu-b06::hohwagu-b07::hohwagu-b08::hohwagu-b09::hohwagu-b10:
+:hohwagu-c01::hohwagu-c02::hohwagu-c03::hohwagu-c04::hohwagu-c05::hohwagu-c06::hohwagu-c07::hohwagu-c08::hohwagu-c09::hohwagu-c10:
+:hohwagu-d01::hohwagu-d02::hohwagu-d03::hohwagu-d04::hohwagu-d05::hohwagu-d06::hohwagu-d07::hohwagu-d08::hohwagu-d09::hohwagu-d10:
+:hohwagu-e01::hohwagu-e02::hohwagu-e03::hohwagu-e04::hohwagu-e05::hohwagu-e06::hohwagu-e07::hohwagu-e08::hohwagu-e09::hohwagu-e10:
+:hohwagu-f01::hohwagu-f02::hohwagu-f03::hohwagu-f04::hohwagu-f05::hohwagu-f06::hohwagu-f07::hohwagu-f08::hohwagu-f09::hohwagu-f10:
+:hohwagu-g01::hohwagu-g02::hohwagu-g03::hohwagu-g04::hohwagu-g05::hohwagu-g06::hohwagu-g07::hohwagu-g08::hohwagu-g09::hohwagu-g10:
