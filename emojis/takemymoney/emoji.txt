@@ -1,0 +1,6 @@
+:takemymoney-a1::takemymoney-a2::takemymoney-a3::takemymoney-a4::takemymoney-a5::takemymoney-a6::takemymoney-a7::takemymoney-a8:
+:takemymoney-b1::takemymoney-b2::takemymoney-b3::takemymoney-b4::takemymoney-b5::takemymoney-b6::takemymoney-b7::takemymoney-b8:
+:takemymoney-c1::takemymoney-c2::takemymoney-c3::takemymoney-c4::takemymoney-c5::takemymoney-c6::takemymoney-c7::takemymoney-c8:
+:takemymoney-d1::takemymoney-d2::takemymoney-d3::takemymoney-d4::takemymoney-d5::takemymoney-d6::takemymoney-d7::takemymoney-d8:
+:takemymoney-e1::takemymoney-e2::takemymoney-e3::takemymoney-e4::takemymoney-e5::takemymoney-e6::takemymoney-e7::takemymoney-e8:
+:takemymoney-f1::takemymoney-f2::takemymoney-f3::takemymoney-f4::takemymoney-f5::takemymoney-f6::takemymoney-f7::takemymoney-f8:
