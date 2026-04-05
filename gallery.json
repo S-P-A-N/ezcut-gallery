@@ -1,5 +1,17 @@
 [
   {
+    "name": "say_my_name",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 144,
+    "author": "CHG",
+    "shared_at": "2026-04-05T04:07:53.709936+00:00",
+    "original_gif": "emojis/say_my_name/original.gif",
+    "emoji_txt": "emojis/say_my_name/emoji.txt"
+  },
+  {
     "name": "ronaldo_siu",
     "cols": 16,
     "rows": 9,
