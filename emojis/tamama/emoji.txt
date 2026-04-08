@@ -1,0 +1,12 @@
+:tamama-a1::tamama-a2::tamama-a3::tamama-a4::tamama-a5::tamama-a6::tamama-a7::tamama-a8::tamama-a9:
+:tamama-b1::tamama-b2::tamama-b3::tamama-b4::tamama-b5::tamama-b6::tamama-b7::tamama-b8::tamama-b9:
+:tamama-c1::tamama-c2::tamama-c3::tamama-c4::tamama-c5::tamama-c6::tamama-c7::tamama-c8::tamama-c9:
+:tamama-d1::tamama-d2::tamama-d3::tamama-d4::tamama-d5::tamama-d6::tamama-d7::tamama-d8::tamama-d9:
+:tamama-e1::tamama-e2::tamama-e3::tamama-e4::tamama-e5::tamama-e6::tamama-e7::tamama-e8::tamama-e9:
+:tamama-f1::tamama-f2::tamama-f3::tamama-f4::tamama-f5::tamama-f6::tamama-f7::tamama-f8::tamama-f9:
+:tamama-g1::tamama-g2::tamama-g3::tamama-g4::tamama-g5::tamama-g6::tamama-g7::tamama-g8::tamama-g9:
+:tamama-h1::tamama-h2::tamama-h3::tamama-h4::tamama-h5::tamama-h6::tamama-h7::tamama-h8::tamama-h9:
+:tamama-i1::tamama-i2::tamama-i3::tamama-i4::tamama-i5::tamama-i6::tamama-i7::tamama-i8::tamama-i9:
+:tamama-j1::tamama-j2::tamama-j3::tamama-j4::tamama-j5::tamama-j6::tamama-j7::tamama-j8::tamama-j9:
+:tamama-k1::tamama-k2::tamama-k3::tamama-k4::tamama-k5::tamama-k6::tamama-k7::tamama-k8::tamama-k9:
+:tamama-l1::tamama-l2::tamama-l3::tamama-l4::tamama-l5::tamama-l6::tamama-l7::tamama-l8::tamama-l9:
