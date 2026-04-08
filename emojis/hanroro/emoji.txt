@@ -1,0 +1,6 @@
+:hanroro-a1::hanroro-a2::hanroro-a3::hanroro-a4::hanroro-a5::hanroro-a6::hanroro-a7::hanroro-a8:
+:hanroro-b1::hanroro-b2::hanroro-b3::hanroro-b4::hanroro-b5::hanroro-b6::hanroro-b7::hanroro-b8:
+:hanroro-c1::hanroro-c2::hanroro-c3::hanroro-c4::hanroro-c5::hanroro-c6::hanroro-c7::hanroro-c8:
+:hanroro-d1::hanroro-d2::hanroro-d3::hanroro-d4::hanroro-d5::hanroro-d6::hanroro-d7::hanroro-d8:
+:hanroro-e1::hanroro-e2::hanroro-e3::hanroro-e4::hanroro-e5::hanroro-e6::hanroro-e7::hanroro-e8:
+:hanroro-f1::hanroro-f2::hanroro-f3::hanroro-f4::hanroro-f5::hanroro-f6::hanroro-f7::hanroro-f8:
