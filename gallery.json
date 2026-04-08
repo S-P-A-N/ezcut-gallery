@@ -1,5 +1,17 @@
 [
   {
+    "name": "tamama",
+    "cols": 9,
+    "rows": 12,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 108,
+    "author": "JungHyunWoo",
+    "shared_at": "2026-04-08T01:44:52.648772+00:00",
+    "original_gif": "emojis/tamama/original.gif",
+    "emoji_txt": "emojis/tamama/emoji.txt"
+  },
+  {
     "name": "hanroro",
     "cols": 8,
     "rows": 6,
