@@ -1,0 +1,12 @@
+{
+  "name": "hikyu_nikku",
+  "cols": 10,
+  "rows": 6,
+  "tile_size": 128,
+  "frame_step": 1,
+  "tile_count": 60,
+  "author": "nikku_kami",
+  "shared_at": "2026-04-09T05:52:55.082195+00:00",
+  "original_gif": "emojis/hikyu_nikku/original.gif",
+  "emoji_txt": "emojis/hikyu_nikku/emoji.txt"
+}
