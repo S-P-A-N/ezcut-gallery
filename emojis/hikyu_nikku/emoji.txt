@@ -1,0 +1,6 @@
+:hikyu_nikku-a01::hikyu_nikku-a02::hikyu_nikku-a03::hikyu_nikku-a04::hikyu_nikku-a05::hikyu_nikku-a06::hikyu_nikku-a07::hikyu_nikku-a08::hikyu_nikku-a09::hikyu_nikku-a10:
+:hikyu_nikku-b01::hikyu_nikku-b02::hikyu_nikku-b03::hikyu_nikku-b04::hikyu_nikku-b05::hikyu_nikku-b06::hikyu_nikku-b07::hikyu_nikku-b08::hikyu_nikku-b09::hikyu_nikku-b10:
+:hikyu_nikku-c01::hikyu_nikku-c02::hikyu_nikku-c03::hikyu_nikku-c04::hikyu_nikku-c05::hikyu_nikku-c06::hikyu_nikku-c07::hikyu_nikku-c08::hikyu_nikku-c09::hikyu_nikku-c10:
+:hikyu_nikku-d01::hikyu_nikku-d02::hikyu_nikku-d03::hikyu_nikku-d04::hikyu_nikku-d05::hikyu_nikku-d06::hikyu_nikku-d07::hikyu_nikku-d08::hikyu_nikku-d09::hikyu_nikku-d10:
+:hikyu_nikku-e01::hikyu_nikku-e02::hikyu_nikku-e03::hikyu_nikku-e04::hikyu_nikku-e05::hikyu_nikku-e06::hikyu_nikku-e07::hikyu_nikku-e08::hikyu_nikku-e09::hikyu_nikku-e10:
+:hikyu_nikku-f01::hikyu_nikku-f02::hikyu_nikku-f03::hikyu_nikku-f04::hikyu_nikku-f05::hikyu_nikku-f06::hikyu_nikku-f07::hikyu_nikku-f08::hikyu_nikku-f09::hikyu_nikku-f10:
