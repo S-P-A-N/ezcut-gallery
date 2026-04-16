@@ -1,5 +1,17 @@
 [
   {
+    "name": "중2병",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 3,
+    "tile_count": 144,
+    "author": "이민기",
+    "shared_at": "2026-04-16T07:06:52.373647+00:00",
+    "original_gif": "emojis/중2병/original.gif",
+    "emoji_txt": "emojis/중2병/emoji.txt"
+  },
+  {
     "name": "bamti",
     "cols": 10,
     "rows": 10,
