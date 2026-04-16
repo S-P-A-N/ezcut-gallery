@@ -1,0 +1,10 @@
+:bamti-a01::bamti-a02::bamti-a03::bamti-a04::bamti-a05::bamti-a06::bamti-a07::bamti-a08::bamti-a09::bamti-a10:
+:bamti-b01::bamti-b02::bamti-b03::bamti-b04::bamti-b05::bamti-b06::bamti-b07::bamti-b08::bamti-b09::bamti-b10:
+:bamti-c01::bamti-c02::bamti-c03::bamti-c04::bamti-c05::bamti-c06::bamti-c07::bamti-c08::bamti-c09::bamti-c10:
+:bamti-d01::bamti-d02::bamti-d03::bamti-d04::bamti-d05::bamti-d06::bamti-d07::bamti-d08::bamti-d09::bamti-d10:
+:bamti-e01::bamti-e02::bamti-e03::bamti-e04::bamti-e05::bamti-e06::bamti-e07::bamti-e08::bamti-e09::bamti-e10:
+:bamti-f01::bamti-f02::bamti-f03::bamti-f04::bamti-f05::bamti-f06::bamti-f07::bamti-f08::bamti-f09::bamti-f10:
+:bamti-g01::bamti-g02::bamti-g03::bamti-g04::bamti-g05::bamti-g06::bamti-g07::bamti-g08::bamti-g09::bamti-g10:
+:bamti-h01::bamti-h02::bamti-h03::bamti-h04::bamti-h05::bamti-h06::bamti-h07::bamti-h08::bamti-h09::bamti-h10:
+:bamti-i01::bamti-i02::bamti-i03::bamti-i04::bamti-i05::bamti-i06::bamti-i07::bamti-i08::bamti-i09::bamti-i10:
+:bamti-j01::bamti-j02::bamti-j03::bamti-j04::bamti-j05::bamti-j06::bamti-j07::bamti-j08::bamti-j09::bamti-j10:
