@@ -1,5 +1,17 @@
 [
   {
+    "name": "chika_turn",
+    "cols": 10,
+    "rows": 10,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 100,
+    "author": "Luka",
+    "shared_at": "2026-04-16T08:13:54.821171+00:00",
+    "original_gif": "emojis/chika_turn/original.gif",
+    "emoji_txt": "emojis/chika_turn/emoji.txt"
+  },
+  {
     "name": "중2병",
     "cols": 16,
     "rows": 9,
