@@ -1,5 +1,17 @@
 [
   {
+    "name": "bamti",
+    "cols": 10,
+    "rows": 10,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 100,
+    "author": "bamti",
+    "shared_at": "2026-04-16T04:58:51.103435+00:00",
+    "original_gif": "emojis/bamti/original.gif",
+    "emoji_txt": "emojis/bamti/emoji.txt"
+  },
+  {
     "name": "hikyu_nikku",
     "cols": 10,
     "rows": 6,
