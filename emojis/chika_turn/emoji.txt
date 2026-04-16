@@ -1,0 +1,10 @@
+:chika_turn-a01::chika_turn-a02::chika_turn-a03::chika_turn-a04::chika_turn-a05::chika_turn-a06::chika_turn-a07::chika_turn-a08::chika_turn-a09::chika_turn-a10:
+:chika_turn-b01::chika_turn-b02::chika_turn-b03::chika_turn-b04::chika_turn-b05::chika_turn-b06::chika_turn-b07::chika_turn-b08::chika_turn-b09::chika_turn-b10:
+:chika_turn-c01::chika_turn-c02::chika_turn-c03::chika_turn-c04::chika_turn-c05::chika_turn-c06::chika_turn-c07::chika_turn-c08::chika_turn-c09::chika_turn-c10:
+:chika_turn-d01::chika_turn-d02::chika_turn-d03::chika_turn-d04::chika_turn-d05::chika_turn-d06::chika_turn-d07::chika_turn-d08::chika_turn-d09::chika_turn-d10:
+:chika_turn-e01::chika_turn-e02::chika_turn-e03::chika_turn-e04::chika_turn-e05::chika_turn-e06::chika_turn-e07::chika_turn-e08::chika_turn-e09::chika_turn-e10:
+:chika_turn-f01::chika_turn-f02::chika_turn-f03::chika_turn-f04::chika_turn-f05::chika_turn-f06::chika_turn-f07::chika_turn-f08::chika_turn-f09::chika_turn-f10:
+:chika_turn-g01::chika_turn-g02::chika_turn-g03::chika_turn-g04::chika_turn-g05::chika_turn-g06::chika_turn-g07::chika_turn-g08::chika_turn-g09::chika_turn-g10:
+:chika_turn-h01::chika_turn-h02::chika_turn-h03::chika_turn-h04::chika_turn-h05::chika_turn-h06::chika_turn-h07::chika_turn-h08::chika_turn-h09::chika_turn-h10:
+:chika_turn-i01::chika_turn-i02::chika_turn-i03::chika_turn-i04::chika_turn-i05::chika_turn-i06::chika_turn-i07::chika_turn-i08::chika_turn-i09::chika_turn-i10:
+:chika_turn-j01::chika_turn-j02::chika_turn-j03::chika_turn-j04::chika_turn-j05::chika_turn-j06::chika_turn-j07::chika_turn-j08::chika_turn-j09::chika_turn-j10:
