@@ -1,0 +1,12 @@
+{
+  "name": "kita_ga_kita",
+  "cols": 16,
+  "rows": 9,
+  "tile_size": 128,
+  "frame_step": 3,
+  "tile_count": 144,
+  "author": "이민기",
+  "shared_at": "2026-04-17T06:42:27.148173+00:00",
+  "original_gif": "emojis/kita_ga_kita/original.gif",
+  "emoji_txt": "emojis/kita_ga_kita/emoji.txt"
+}
