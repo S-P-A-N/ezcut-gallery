@@ -1,5 +1,17 @@
 [
   {
+    "name": "SPECIAL_STAGE_CUTIE_STREET-2",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 3,
+    "tile_count": 144,
+    "author": "이민기",
+    "shared_at": "2026-04-17T06:27:09.463439+00:00",
+    "original_gif": "emojis/SPECIAL_STAGE_CUTIE_STREET-2/original.gif",
+    "emoji_txt": "emojis/SPECIAL_STAGE_CUTIE_STREET-2/emoji.txt"
+  },
+  {
     "name": "reze_bye",
     "cols": 16,
     "rows": 9,
