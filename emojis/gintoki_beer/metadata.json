@@ -1,0 +1,12 @@
+{
+  "name": "gintoki_beer",
+  "cols": 16,
+  "rows": 8,
+  "tile_size": 128,
+  "frame_step": 1,
+  "tile_count": 128,
+  "author": "이민기",
+  "shared_at": "2026-04-17T06:54:03.844570+00:00",
+  "original_gif": "emojis/gintoki_beer/original.gif",
+  "emoji_txt": "emojis/gintoki_beer/emoji.txt"
+}
