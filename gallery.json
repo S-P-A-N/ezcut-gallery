@@ -1,5 +1,17 @@
 [
   {
+    "name": "hina",
+    "cols": 11,
+    "rows": 6,
+    "tile_size": 128,
+    "frame_step": 1,
+    "tile_count": 66,
+    "author": "shy",
+    "shared_at": "2026-04-17T04:41:02.837628+00:00",
+    "original_gif": "emojis/hina/original.gif",
+    "emoji_txt": "emojis/hina/emoji.txt"
+  },
+  {
     "name": "chika_turn",
     "cols": 10,
     "rows": 10,
