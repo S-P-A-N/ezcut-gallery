@@ -1,0 +1,6 @@
+:hina-a01::hina-a02::hina-a03::hina-a04::hina-a05::hina-a06::hina-a07::hina-a08::hina-a09::hina-a10::hina-a11:
+:hina-b01::hina-b02::hina-b03::hina-b04::hina-b05::hina-b06::hina-b07::hina-b08::hina-b09::hina-b10::hina-b11:
+:hina-c01::hina-c02::hina-c03::hina-c04::hina-c05::hina-c06::hina-c07::hina-c08::hina-c09::hina-c10::hina-c11:
+:hina-d01::hina-d02::hina-d03::hina-d04::hina-d05::hina-d06::hina-d07::hina-d08::hina-d09::hina-d10::hina-d11:
+:hina-e01::hina-e02::hina-e03::hina-e04::hina-e05::hina-e06::hina-e07::hina-e08::hina-e09::hina-e10::hina-e11:
+:hina-f01::hina-f02::hina-f03::hina-f04::hina-f05::hina-f06::hina-f07::hina-f08::hina-f09::hina-f10::hina-f11:
