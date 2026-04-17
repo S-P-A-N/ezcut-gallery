@@ -1,0 +1,6 @@
+:hinokami_kagura-a01::hinokami_kagura-a02::hinokami_kagura-a03::hinokami_kagura-a04::hinokami_kagura-a05::hinokami_kagura-a06::hinokami_kagura-a07::hinokami_kagura-a08::hinokami_kagura-a09::hinokami_kagura-a10:
+:hinokami_kagura-b01::hinokami_kagura-b02::hinokami_kagura-b03::hinokami_kagura-b04::hinokami_kagura-b05::hinokami_kagura-b06::hinokami_kagura-b07::hinokami_kagura-b08::hinokami_kagura-b09::hinokami_kagura-b10:
+:hinokami_kagura-c01::hinokami_kagura-c02::hinokami_kagura-c03::hinokami_kagura-c04::hinokami_kagura-c05::hinokami_kagura-c06::hinokami_kagura-c07::hinokami_kagura-c08::hinokami_kagura-c09::hinokami_kagura-c10:
+:hinokami_kagura-d01::hinokami_kagura-d02::hinokami_kagura-d03::hinokami_kagura-d04::hinokami_kagura-d05::hinokami_kagura-d06::hinokami_kagura-d07::hinokami_kagura-d08::hinokami_kagura-d09::hinokami_kagura-d10:
+:hinokami_kagura-e01::hinokami_kagura-e02::hinokami_kagura-e03::hinokami_kagura-e04::hinokami_kagura-e05::hinokami_kagura-e06::hinokami_kagura-e07::hinokami_kagura-e08::hinokami_kagura-e09::hinokami_kagura-e10:
+:hinokami_kagura-f01::hinokami_kagura-f02::hinokami_kagura-f03::hinokami_kagura-f04::hinokami_kagura-f05::hinokami_kagura-f06::hinokami_kagura-f07::hinokami_kagura-f08::hinokami_kagura-f09::hinokami_kagura-f10:
