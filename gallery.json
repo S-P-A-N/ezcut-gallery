@@ -1,5 +1,17 @@
 [
   {
+    "name": "SPECIAL_STAGE_CUTIE_STREET",
+    "cols": 16,
+    "rows": 9,
+    "tile_size": 128,
+    "frame_step": 6,
+    "tile_count": 144,
+    "author": "이민기",
+    "shared_at": "2026-04-17T06:05:27.606947+00:00",
+    "original_gif": "emojis/SPECIAL_STAGE_CUTIE_STREET/original.gif",
+    "emoji_txt": "emojis/SPECIAL_STAGE_CUTIE_STREET/emoji.txt"
+  },
+  {
     "name": "hinokami_kagura",
     "cols": 10,
     "rows": 6,
